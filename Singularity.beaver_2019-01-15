@@ -32,7 +32,7 @@ alias du='du -ch --max-depth=1'
 %post
 apt-get update
 apt-get upgrade -y
-apt-get install -y --no-install-recommends 
+apt-get install -y --no-install-recommends apt-utils
 apt-get install -y --no-install-recommends adduser
 apt-get install -y --no-install-recommends afni
 apt-get install -y --no-install-recommends ants
