@@ -4,7 +4,7 @@ From: neurodebian:bionic-non-free
 %environment
 export FS_LICENSE=${HOME}/FS_license.txt
 export FREESURFER_HOME=/apps/freesurfer
-source ${FREESURFER_HOME}/SetUpFreeSurfer.sh
+. ${FREESURFER_HOME}/SetUpFreeSurfer.sh
 
 . /etc/fsl/5.0/fsl.sh
 . /etc/afni/afni.sh
@@ -218,9 +218,9 @@ apt-get install -y --no-install-recommends wget
 apt-get install -y --no-install-recommends xvfb
 apt-get install -y --no-install-recommends zlib1g
 
-mkdir -p /apps
-chmod a+rX /apps
+# mkdir -p /apps
+# chmod a+rX /apps
 
-cd /apps; curl -s ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/6.0.1/freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.1.tar.gz | tar xz
+# cd /apps; curl -s ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/6.0.1/freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.1.tar.gz | tar xz
 
 echo "Bootstrapping finished."
